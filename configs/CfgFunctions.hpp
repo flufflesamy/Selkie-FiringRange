@@ -9,5 +9,10 @@ class CfgFunctions
             class isDestroyed {};
             class test {};
         };
+
+        class MedicalConsole
+        {
+
+        };
     };
 };

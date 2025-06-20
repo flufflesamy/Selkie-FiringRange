@@ -1,3 +1,19 @@
-#define AFUNC(fnc) AMY_FiringRange_fnc_##fnc
-#define CFUNC(fnc) CBA_fnc_##fnc
-#define AVAR(v) AMY_FiringRange_##v
+#include "..\imports\cba\script_macros_common.hpp"
+
+#define PREFIX AMY
+#define COMPONENT FiringRange
+
+#define AFUNC(var) TRIPLES(ADDON,fnc,var)
+#define AVAR(v) DOUBLES(ADDON,v)
+
+#define CFUNC(var) TRIPLES(CBA,fnc,var)
+
+#define ACEFUNC(var) TRIPLES(ace,fnc,var)
+#define ACEEFUNC(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
+#define ACEVAR(var) DOUBLES(ace,var)
+#define ACEEVAR(var1,var2) TRIPLES(ace,var1,var2)
+
+#define KFUNC(var) TRIPLES(kat,fnc,var)
+#define KEFUNC(var1,var2) TRIPLES(DOUBLES(kat,var1),fnc,var2)
+#define KVAR(var) DOUBLES(kat,var)
+#define KEVAR(var1,var2) TRIPLES(kat,var1,var2)
