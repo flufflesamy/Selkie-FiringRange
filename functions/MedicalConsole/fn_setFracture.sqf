@@ -1,4 +1,21 @@
 #include "..\macros.hpp"
+/*
+	Author: Amy
+
+	Description:
+		Adds KAM fracture to bodypart for a unit.
+
+	Parameter(s):
+		0: Unit <OBJECT>
+        1: Body Part <STRING>
+        2: Fracture Type <STRING>
+
+	Returns:
+		Nothing
+
+	Examples:
+		[player, "LeftLeg", "Simple"] call AMY_FiringRange_fnc_setFracture;
+*/
 
 params ["_unit", "_bodyPart", "_fracType"];
 
@@ -15,9 +32,6 @@ _kamfractureArray set [_part, _type];
 // set fracture variables for unit
 _unit setVariable ["kat_medical_fractures", _kamfractureArray, true];
 _unit setVariable ["ace_medical_fractures", _fractureArray, true];
-
-// raise event to update fractures
-["ace_medical_fractures", [_unit, _part]] call CFUNC(localEvent);
 
 // update damage effects
 _unit call ACEEFUNC(medical_system,updateDamageEffects);

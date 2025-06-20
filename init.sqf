@@ -10,3 +10,4 @@ AVAR(vehicleConsole) addAction ["Spawn Wraith Medium-Far",
 AVAR(vehicleConsole) addAction ["Spawn Wraith Far", 
 {["OPTRE_FC_Wraith_Tank", "mkrVehFar"] call AFUNC(createVehOnMarker);}];
 
+// Initialize medical console

@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6396.3955,33.870655,5408.501};
-		dir[]={0.62361795,-0.63591397,-0.45465818};
-		up[]={0.51384813,0.77175999,-0.37462878};
-		aside[]={-0.58911866,1.4901161e-08,-0.80804658};
+		pos[]={6497.5571,31.813269,5395.4795};
+		dir[]={0.11964539,-0.64642763,-0.75353599};
+		up[]={0.10136905,0.76297528,-0.63843018};
+		aside[]={-0.98762822,0,-0.15681422};
 	};
 };
 binarizationWanted=0;
@@ -42496,7 +42496,7 @@ class Mission
 			flags=5;
 			class Attributes
 			{
-				name="medicalConsole";
+				name="AMY_FiringRange_medicalConsole";
 			};
 			id=178;
 			type="OPTRE_RS_ConsoleCorvette_SysYellow";

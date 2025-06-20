@@ -12,7 +12,8 @@ class CfgFunctions
 
         class MedicalConsole
         {
-            class setFracture {};    
+            class setFracture {};   
+            class setPulmo {}; 
         };
     };
 };
