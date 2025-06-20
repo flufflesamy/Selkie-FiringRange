@@ -17,3 +17,6 @@
 #define KEFUNC(var1,var2) TRIPLES(DOUBLES(kat,var1),fnc,var2)
 #define KVAR(var) DOUBLES(kat,var)
 #define KEVAR(var1,var2) TRIPLES(kat,var1,var2)
+
+#define ALL_BODY_PARTS ["head", "body", "leftarm", "rightarm", "leftleg", "rightleg"]
+#define FACTURE_TYPE ["simple", "compound", "comminuted"]

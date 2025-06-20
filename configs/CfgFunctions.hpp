@@ -12,7 +12,7 @@ class CfgFunctions
 
         class MedicalConsole
         {
-
+            class setFracture {};    
         };
     };
 };
